@@ -8,7 +8,9 @@ function prompt
     $hostnameColor = Write-Host "$hostname" -ForegroundColor Red
     "$dateColored" + "$username$atsign$hostnameColor" + " $(get-location)> "             
 }
-
+function jHelp {
+    Write-Output ""
+}
 function jTitle($title) {
     if($title){
         $host.ui.RawUI.WindowTitle = "$title"
